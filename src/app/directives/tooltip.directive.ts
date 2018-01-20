@@ -62,7 +62,6 @@ export class TooltipDirective implements OnInit, OnDestroy {
 
   @HostListener('keydown', ['$event'])
   protected onEsc(event) {
-    console.log('escape');
     if (event.keyCode !== this.ESCAPE_KEYCODE) {
       return;
     }
